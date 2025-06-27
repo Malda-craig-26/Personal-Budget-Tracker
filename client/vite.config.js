@@ -1,15 +1,18 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// vite.config.js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
+const API_PORT = 3000;
+
 export default defineConfig({
+  plugins: [react()],
   server: {
     proxy: {
-      '/api': 'https://your-backend.onrender.com'
-    }
+      '/login': `http://localhost:${API_PORT}`,
+      '/register': `http://localhost:${API_PORT}`,
+      '/categories': `http://localhost:${API_PORT}`,
+      '/items': `http://localhost:${API_PORT}`,
+      '/shared': `http://localhost:${API_PORT}`,
+    },
   },
-  build: {
-    outDir: 'dist'
-  },
-  plugins: [react()],
-})
+});
