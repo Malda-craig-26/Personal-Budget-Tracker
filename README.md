@@ -49,7 +49,7 @@ Personal-Budget-Tracker/
 
 ### 1️⃣ Clone the repo
 
-git clone git@github.com:Malda-craig-26/Personal-Budget-Tracker.git
+git clone git clone https://github.com/Malda-craig-26/Personal-Budget-Tracker.git
 cd Personal-Budget-Tracker
 
 | Method | Endpoint         | Description           |
