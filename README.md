@@ -22,6 +22,7 @@ A full-stack personal finance app that helps users track expenses, incomes, and 
 - Axios
 - React Router
 - Formik + Yup
+- React-icons
 
 **Backend:**
 - Flask
